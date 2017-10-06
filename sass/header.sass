@@ -351,11 +351,21 @@ li
 	to
 		opacity: 1
 		transform: translateY(0)
-.ckbx-style-13 label
-	display: inline-block
-	vertical-align: middle
-.ckbx-style-13 span
-	color: #e97f02
+.ckbx-style-13
+	display: flex
+	align-items: center
+	label
+		width: 70px
+		margin: 0
+	span
+		transition: 0.5s
+		font: 12.5px RobotoSlabBold
+		&.one
+			color: #e97f02
+			margin-right: 18px
+		&.two
+			color: #24292a
+			margin-left: 23px
 .ckbx-style-13 label:before
 	width: 70px
 .ckbx-style-13 label:before
@@ -365,14 +375,16 @@ li
 	border: 1px solid #e97f02
 .ckbx-style-13 label:before
 	background: #e6e6e6
-.ckbx-style-13 input[type=checkbox]:checked+label:before
+.ckbx-style-13 input[type=checkbox]:checked~label:before
 	background: #e97f02
 	box-shadow: none
-.ckbx-style-13 input[type=checkbox]:checked+label:after
+.ckbx-style-13 input[type=checkbox]:checked~label:after
 	background: #e97f02
 	left: 51px
-.ckbx-style-13 input[type=checkbox]:checked+span
+.ckbx-style-13 input[type=checkbox]:checked~span.one
 	color: #24292a
+.ckbx-style-13 input[type=checkbox]:checked~span.two
+	color: #e97f02
 //Секция  rent-VPS-VDS-servers
 .rent-VPS-VDS-servers
 	.rent-VPS-VDS-servers__title
@@ -436,7 +448,8 @@ li
 				background-color: #ff8700
 				color: #fff
 			
-
+	.rent-VPS-VDS-servers__rates
+		.table
 // Секция 
 // Секция 
 // Секция 
