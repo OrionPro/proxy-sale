@@ -11,12 +11,11 @@ html, body
 	font-size: 100%
 	&.flex-footer
 		height: 100%
-body
-	mf
 
-p,ul
+p, ul
 	padding: 0
 	margin: 0
+
 li
 	list-style: none
 
@@ -35,22 +34,23 @@ li
 .popup2
 	width: 100%
 	height: 100%
-	background: rgba(0, 0, 0, 0.65)	
+	background: rgba(0, 0, 0, 0.65)
 	position: fixed
 	top: 0
 	left: 0
 	display: none
 	overflow: auto
 	z-index: 1000
+
 .popup
 	width: 100%
 	height: 100%
-	background: rgba(0, 0, 0, 0.65)	
+	background: rgba(0, 0, 0, 0.65)
 	position: fixed
 	top: 0
 	left: 0
 	display: none
-	overflow: auto	
+	overflow: auto
 	z-index: 1000
 	&.pop3
 		.dm-modal
@@ -65,17 +65,20 @@ li
 				a
 					font-size: 30px
 					color: #fff
+
 .dm-table
 	display: table
 	width: 100%
 	height: 100%
+
 .overlay
 	width: 100%
 	height: 100%
 	position: fixed
 	top: 0
-	left: 0	
+	left: 0
 	z-index: 1001
+
 .dm-cell
 	display: table-cell
 	padding: 0 1em
@@ -83,13 +86,13 @@ li
 	text-align: center
 
 .dm-modal
-	width: 470px		
+	width: 470px
 	max-width: 50em
 	display: inline-block
 	padding: 50px 46px 50px 46px
-	border: 3px solid $main_color	
+	border: 3px solid $main_color
 	text-align: center
-	position: relative	
+	position: relative
 	animation: fade .8s
 	background-color: #fff
 	border-radius: 20px
@@ -119,8 +122,8 @@ li
 			border: 1px solid #C8C8C8
 			-webkit-border-radius: 5px
 			border-radius: 5px
-			-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3)
-			box-shadow: 0 0 10px rgba(0,0,0,.3)
+			-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+			box-shadow: 0 0 10px rgba(0, 0, 0, .3)
 			z-index: 100
 			&.input_error_email
 				width: 215px
@@ -138,13 +141,12 @@ li
 			background-image: url('../img/modal_error_triangle.png')
 		.modal_error_chest_img
 			top: -31px
-			left: 0				
+			left: 0
 			height: 9px
 		.modal_error_triangle
 			top: -43px
-			left: 10px				
-			height: 8px			
-		
+			left: 10px
+			height: 8px
 
 	label
 		margin-bottom: 7px
@@ -162,15 +164,15 @@ li
 		margin-bottom: 10px
 		padding-left: 20px
 		padding-right: 37px
-		border: none		
-		background-color: #F4F4F4		
-		border-radius: 5px		
-		box-shadow: 0 1px 0 rgba(0,0,2,.28)		
+		border: none
+		background-color: #F4F4F4
+		border-radius: 5px
+		box-shadow: 0 1px 0 rgba(0, 0, 2, .28)
 		transition: 1s
-		&:focus		
+		&:focus
 			outline: 0
-			box-shadow: 0 1px 0 rgba(255,81,46,.88)
-	
+			box-shadow: 0 1px 0 rgba(255, 81, 46, .88)
+
 	.success_mail
 		display: none
 		color: $main_color
@@ -190,7 +192,7 @@ li
 		position: relative
 		text-align: left
 		.drop
-			width: 100%	
+			width: 100%
 			max-height: 200px
 			overflow: auto
 			margin: 0 auto
@@ -209,10 +211,10 @@ li
 				border-top: none
 				cursor: pointer
 				display: block
-				@include font($auxiliary_txt_color, 18,  $font_MyriadPro_Bold, 1.2)
+				@include font($auxiliary_txt_color, 18, $font_MyriadPro_Bold, 1.2)
 				padding: 7px 15px 7px 25px
 				&:hover
-					background-color: rgba(0,0,0,0.2)			
+					background-color: rgba(0, 0, 0, 0.2)
 					outline: 0
 				a
 					text-decoration: none
@@ -223,10 +225,10 @@ li
 			padding-right: 30px
 			margin-bottom: 30px
 			display: block
-			@include font(#000, 18,  $font_MyriadPro_Bold, 1.2)
-			background-color: #F4F4F4	
+			@include font(#000, 18, $font_MyriadPro_Bold, 1.2)
+			background-color: #F4F4F4
 			line-height: 40px
-			box-shadow: 0 1px 0 rgba(0,0,2,.28)	
+			box-shadow: 0 1px 0 rgba(0, 0, 2, .28)
 			overflow: hidden
 			white-space: nowrap
 			text-overflow: ellipsis
@@ -237,7 +239,7 @@ li
 			&.active
 				color: #000
 				background-color: #F4F4F4
-				
+
 		.slct_arrow
 			position: absolute
 			top: 5px
@@ -247,9 +249,10 @@ li
 				color: #000
 				position: relative
 				z-index: 10
-				transition: 0.3s		
+				transition: 0.3s
 			&.active .fa
 				transform: rotate(180deg)
+
 .close
 	position: absolute
 	right: 25px
@@ -286,8 +289,8 @@ li
 		border: 1px solid #C8C8C8
 		-webkit-border-radius: 5px
 		border-radius: 5px
-		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3)
-		box-shadow: 0 0 10px rgba(0,0,0,.3)
+		-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+		box-shadow: 0 0 10px rgba(0, 0, 0, .3)
 		z-index: 100
 		&.input_error_email
 			width: 215px
@@ -314,16 +317,19 @@ li
 
 // внешний вид табов и анимация
 .tabs-items-wrap
+
 .tabs-item
 	&.active
 		background-color: #fff
 		border: 1px solid $main_color
 		color: $main_color
+
 .tabs-wrap
 	display: none
 	padding: 30px 0 35px 0
 	border: 1px solid #c5c5c5
-
+	&.its-configuration
+		padding: 25px 0 30px 30px
 .tabs-wrap.active
 	display: block
 	animation: fade
@@ -344,6 +350,7 @@ li
 		opacity: 0
 	to
 		opacity: 1
+
 @keyframes fade-bot
 	from
 		opacity: 0
@@ -351,6 +358,7 @@ li
 	to
 		opacity: 1
 		transform: translateY(0)
+
 .ckbx-style-13
 	display: flex
 	align-items: center
@@ -366,24 +374,32 @@ li
 		&.two
 			color: #24292a
 			margin-left: 23px
+
 .ckbx-style-13 label:before
 	width: 70px
+
 .ckbx-style-13 label:before
 	box-shadow: none
+
 .ckbx-style-13 label:after
 	background: #e97f02
 	border: 1px solid #e97f02
+
 .ckbx-style-13 label:before
 	background: #e6e6e6
-.ckbx-style-13 input[type=checkbox]:checked~label:before
+
+.ckbx-style-13 input[type=checkbox]:checked ~ label:before
 	background: #e97f02
 	box-shadow: none
-.ckbx-style-13 input[type=checkbox]:checked~label:after
+
+.ckbx-style-13 input[type=checkbox]:checked ~ label:after
 	background: #e97f02
 	left: 51px
-.ckbx-style-13 input[type=checkbox]:checked~span.one
+
+.ckbx-style-13 input[type=checkbox]:checked ~ span.one
 	color: #24292a
-.ckbx-style-13 input[type=checkbox]:checked~span.two
+
+.ckbx-style-13 input[type=checkbox]:checked ~ span.two
 	color: #e97f02
 //Секция  rent-VPS-VDS-servers
 .rent-VPS-VDS-servers
@@ -449,7 +465,7 @@ li
 				background: linear-gradient(to top, transparent 0%, #fd8314 100%)
 				background-color: #ff8700
 				color: #fff
-			
+
 	.rent-VPS-VDS-servers__rates
 		padding: 30px 0 0 0
 		.table-rates
@@ -462,14 +478,14 @@ li
 						padding: 24px 0
 						&:first-of-type
 							width: 200px
-							background-image: none!important
+							background-image: none !important
 						&.empty
 							width: 30px
 							background: none
 						&:nth-of-type(odd)
 							font: 20px RobotoSlabBold
 							color: #fff
-							background-image: linear-gradient(to top,#1e2222 0,#313737 100%)
+							background-image: linear-gradient(to top, #1e2222 0, #313737 100%)
 							&.active
 								background-image: linear-gradient(to top, #f34718 0%, #fc7d14 100%)
 			tbody
@@ -552,17 +568,17 @@ li
 							color: #fff
 							transition: 0.3s
 							&:hover
-								background-image: linear-gradient(to top,transparent 0,#1e2223 100%)
+								background-image: linear-gradient(to top, transparent 0, #1e2223 100%)
 								background-color: #323838
 								text-decoration: none
 								transition: 0.3s
 							&:active
-								background-image: linear-gradient(to top,transparent 0,#1e2223 100%)
+								background-image: linear-gradient(to top, transparent 0, #1e2223 100%)
 								background-color: #323838
 								text-decoration: none
 								transition: 0.3s
 							&:focus
-								background-image: linear-gradient(to top,transparent 0,#1e2223 100%)
+								background-image: linear-gradient(to top, transparent 0, #1e2223 100%)
 								background-color: #323838
 								text-decoration: none
 								transition: 0.3s
@@ -571,6 +587,7 @@ li
 	padding-top: 40px
 	padding-bottom: 40px
 	background: #fff url(../img/rent-VPS-VDS-servers-description__bg.jpg) center top no-repeat
+	background-size: cover
 	.rent-VPS-VDS-servers-description__wrap
 		display: flex
 		margin-bottom: 30px
@@ -601,6 +618,7 @@ li
 		display: flex
 		justify-content: space-around
 		flex-wrap: wrap
+		margin-bottom: 20px
 	.free-with-each-VDS-VPS__item
 		display: flex
 		padding: 0 20px
@@ -611,17 +629,236 @@ li
 
 	.free-with-each-VDS-VPS__item-img
 		margin-bottom: 20px
+	.free-with-each-VDS-VPS__item-txt
+		font: 17px RobotoSlabRegular
+		text-align: center
+		p
+			width: 165px
+	.free-with-each-VDS-VPS__OS
+		h3
+			font: 17px RobotoSlabBold
+			padding: 0
+			background: transparent
+			margin-bottom: 30px
+		.free-with-each-VDS-VPS__OS-wrap-free
+			display: flex
+			margin-bottom: 30px
+		.free-with-each-VDS-VPS__OS-items-free
+			width: 245px
+			display: flex
+			flex-wrap: wrap
+			i
+				margin-right: 5px
+			.free-with-each-VDS-VPS__OS-item
+				width: 100px
+				margin-bottom: 20px
+				margin-right: 0
+				&:nth-of-type(1)
+					margin-right: 35px
+				&:nth-of-type(3)
+					margin-right: 35px
+				&.margin-b
+					margin-bottom: 0
+				span
+					font: 12.5px RobotoSlabRegular
+		.free-with-each-VDS-VPS__OS-brackets
+			display: flex
+			align-items: center
+			img
+				margin-right: 10px
+			span
+				font: 12.5px RobotoSlabRegular
+				color: $main_color
+				text-transform: uppercase
+		.free-with-each-VDS-VPS__OS-wrap-win
+			display: flex
+			flex-wrap: wrap
+		.free-with-each-VDS-VPS__OS-items-win
+			display: flex
+		.free-with-each-VDS-VPS__OS-item-win
+			display: flex
+		.free-with-each-VDS-VPS__OS-items-win-img
+			display: inline-flex
+			align-items: center
+			margin-right: 10px
+		.free-with-each-VDS-VPS__OS-item-inner-txt-wrap
+			display: flex
+			flex-direction: column
+		.free-with-each-VDS-VPS__OS-item-inner-txt
+			span
+				&.divider
+					width: 122px
+					height: 1px
+					display: inline-block
+					background: url(../images/border-gray2.png) left bottom/100% 1px no-repeat
+				&:last-of-type
+					font: 12.5px RobotoSlabRegular
+					color: $main_color
+		.paid-services-items
+			.paid-services__item
+				width: 100%
+				min-height: 27px
+				margin-bottom: 15px
+				padding-left: 30px
+				background: url(../images/ico-table.png) no-repeat left center
+				font: 12.5px RobotoSlabBold
+				.paid-services-table
+					width: 100%
+					.divider
+						background: url(../images/border-gray2.png) left bottom/100% 1px no-repeat
+						span
+							opacity: 0
+					td
+						padding: 5px 0 0 0
+						i
+							margin-left: 5px
+							cursor: pointer
+						&:last-of-type
+							text-align: right
+						&.main-color
+							color: $main_color
+							text-transform: uppercase
 .free-with-each-VDS-VPS__title
 	margin-bottom: 40px
 	h2
 		text-align: center
 		margin: 0
+		padding: 0
 		font: 21px RobotoSlabBold
 		background: none
 		text-transform: uppercase
 		span
 			color: #24292a
 
+// Секция FAQ
+.FAQ
+	padding-top: 65px
+	.FAQ-tab-wrap-all
+		.flex
+			display: flex
+			flex-wrap: wrap
+	.FAQ-tab-items
+		button
+			width: 100%
+			height: 74px
+			margin-bottom: 10px
+			padding-left: 10px
+			border: none
+			text-align: left
+			background-color: #f1f1f1
+			font: 14px RobotoSlabRegular
+			box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18)
+			position: relative
+			transition: color, background-color, 0.3s
+			&:last-of-type
+				margin-bottom: 0
+			&:first-of-type
+				&:before
+					content: ""
+					display: block
+					position: absolute
+					top: -1px
+					left: 0
+					height: 1px
+					width: 100%
+					background-color: #ffffff
+					z-index: 10
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					top: -1px
+					right: -30px
+					height: 103%
+					width: 27px
+					background-color: #ffffff
+					border-top: none
+					border-bottom: none
+					z-index: 10
+				&.active
+					box-shadow: none
+					background-color: #fff
+					color: $main_color
+					border-left: 1px solid #c5c5c5
+					border-bottom: 1px solid #c5c5c5
+					&:after
+						content: ""
+						display: block
+						position: absolute
+						top: -1px
+						right: -31px
+						height: 103%
+						width: 31px
+						background-color: #ffffff
+						border-top: 1px solid #c5c5c5
+						border-bottom: 1px solid #c5c5c5
+						z-index: 10
+			&.active
+				box-shadow: none
+				background-color: #fff
+				color: $main_color
+				border-left: 1px solid #c5c5c5
+				border-bottom: 1px solid #c5c5c5
+				border-top: 1px solid #c5c5c5
+				&:before
+					content: none
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					top: -1px
+					right: -31px
+					height: 103%
+					width: 31px
+					background-color: #ffffff
+					border-top: 1px solid #c5c5c5
+					border-bottom: 1px solid #c5c5c5
+					z-index: 10
+			&:hover
+				outline: 0
+				color: $main_color
+			&:active
+				outline: 0
+			&:focus
+				outline: 0
 
-// Секция 
-// Секция 
+	.FAQ-tabs-wrap
+		min-height: 100%
+		display: none
+		padding-left: 30px
+		padding-top: 25px
+		border: 1px solid #c5c5c5
+		h3
+			padding: 0
+			margin: 0 0 10px 0
+			font: 14px RobotoSlabRegular
+			background: none
+			color: $main_color
+		p
+			font: 12.5px RobotoSlabRegular
+			margin-bottom: 10px
+		&.active
+			display: block
+			animation: fade
+			animation-duration: 0.7s
+			animation-delay: 0.3s
+			animation-fill-mode: backwards
+.rent-VPS-VDS-servers-its-configuration
+	h3
+		font: 17px RobotoSlabBold
+		padding: 0
+		margin-bottom: 10px
+		margin-top: 0
+		background: none
+		text-transform: uppercase
+		color: $main_color
+	.rent-VPS-VDS-servers-its-configuration__sliders-wrap
+		.rent-VPS-VDS-servers-its-configuration__sliders-item
+
+// Секция seo-txt
+.seo-txt
+	padding-top: 65px
+	.seo-txt__text-block
+		p
+			font: 12.5px RobotoSlabRegular
+			margin-bottom: 10px

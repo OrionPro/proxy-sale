@@ -28,6 +28,12 @@ $(document).ready( function() {
 		classBody:'active',
 		classBtn: 'active'
 	});
+	tabs({
+		btn:'.FAQ-tab-items .FAQ-tab-item',
+		tabsBody:'.FAQ-tabs-wrap',
+		classBody:'active',
+		classBtn: 'active'
+	});
 	// Активация popover
 	$('[data-toggle="popover"]').popover();
     // Определения браузера
