@@ -4,6 +4,7 @@
 @import "sprite/sprite.sass"
 @import "../app/libs/FontAwesome/font-awesome.min"
 @import "../app/libs/checkboxes/checkboxes.min"
+@import "../app/libs/tablesaw/tablesaw.css"
 // @import "app/libs/mCustomScrollbar/jquery.mCustomScrollbar.min" // стили для mCustomScrollbar
 // @import "app/libs/jquery/jquery-ui.min"  //Если мы хотим подключить стили для  jquery-ui (например для рабочих tooltips)
 
@@ -404,6 +405,8 @@ li
 //Секция  rent-VPS-VDS-servers
 .rent-VPS-VDS-servers
 	padding-bottom: 80px
+	.tablesaw-bar
+		display: none
 	.rent-VPS-VDS-servers__title
 		margin-top: 50px
 		margin-bottom: 30px
@@ -471,6 +474,8 @@ li
 		.table-rates
 			width: 1000px
 			margin-left: 70px
+			&.table-rates-hidden
+				display: none
 			thead
 				tr
 					th

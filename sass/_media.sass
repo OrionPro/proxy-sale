@@ -18,7 +18,54 @@
 				margin: 30px auto 30px
 			.modal_form_input_wrap
 				display: inline-block
-
+	.tablesaw-bar
+		margin-bottom: 20px
+		overflow: hidden
+	.table-rates
+		display: none
+	.rent-VPS-VDS-servers
+		.tablesaw-bar
+			display: block
+		.rent-VPS-VDS-servers__rates
+			.table-rates
+				width: 100%
+				margin: 0
+				&.table-rates-hidden
+					display: table
+				thead
+					tr
+						th
+							font: 16px RobotoSlabBold
+							color: #fff
+							background-image: linear-gradient(to top,#1e2222 0,#313737 100%)
+							&.active
+								font-size: 16px
+							&:nth-of-type(odd)
+								font: 16px RobotoSlabBold
+				tbody
+					tr
+						td
+							padding: 15px 0
+							background-color: #f1f1f1
+							border-left: 1px solid rgba(0,0,0,.12)
+							border-right: 1px solid rgba(0,0,0,.12)
+							a
+								width: 70%
+							&:first-of-type
+								padding-left: 10px
+							.os
+								display: flex
+								margin: 0 auto 10px
+							.big
+								font-size: 23px
+							&.empty
+								width: 0
+								height: 0
+								padding: 0
+							&:nth-of-type(odd)
+								width: inherit
+	FAQ .FAQ-tab-items button.active:after, .FAQ .FAQ-tab-items button:first-of-type.active:after
+		right: -32px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -29,7 +76,9 @@
 	.header_modal
 		margin-top: 40px
 	nav[canvas]
-		display: block		
+		display: block
+	.FAQ .FAQ-tab-items button.active:after, .FAQ .FAQ-tab-items button:first-of-type.active:after
+		right: -32px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	
@@ -62,6 +111,30 @@
 		margin-top: 40px
 	[off-canvas*=left]
 		width: 255px
+	.rent-VPS-VDS-servers
+		.tablesaw-bar
+		.rent-VPS-VDS-servers__rates
+			.table-rates
+				&.table-rates-hidden
+				thead
+					tr
+						th
+							padding: 15px 0
+							font: 15px RobotoSlabBold
+							&:nth-of-type(odd)
+								padding: 15px 0
+								font: 15px RobotoSlabBold
+							&.active
+								font-size: 14px
+				tbody
+					tr
+						td
+	.FAQ
+		.FAQ-tab-items
+			button
+				height: 100%
+				font-size: 12px
+				word-break: break-all
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 520px)
@@ -72,6 +145,7 @@
 	.dm-modal
 		input[type=submit]
 			width: 100%
+
 @media only screen and (max-width : 480px)
 	/**/
 
@@ -85,7 +159,6 @@
 		.intermediate_title
 			h3
 				font-size: 20px
-
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
