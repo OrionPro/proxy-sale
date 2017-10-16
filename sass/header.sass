@@ -6,7 +6,7 @@
 @import "../app/libs/checkboxes/checkboxes.min"
 @import "../app/libs/tablesaw/tablesaw.css"
 // @import "app/libs/mCustomScrollbar/jquery.mCustomScrollbar.min" // стили для mCustomScrollbar
-// @import "app/libs/jquery/jquery-ui.min"  //Если мы хотим подключить стили для  jquery-ui (например для рабочих tooltips)
+@import "../app/libs/jquery/jquery-ui.min"
 
 html, body
 	font-size: 100%
@@ -317,7 +317,6 @@ li
 	.modal_error_triangle
 
 // внешний вид табов и анимация
-.tabs-items-wrap
 
 .tabs-item
 	&.active
@@ -330,7 +329,7 @@ li
 	padding: 30px 0 35px 0
 	border: 1px solid #c5c5c5
 	&.its-configuration
-		padding: 25px 0 30px 30px
+		padding: 25px 0 30px 0
 .tabs-wrap.active
 	display: block
 	animation: fade
@@ -417,7 +416,7 @@ li
 		span
 			color: #e5812e
 	.rent-VPS-VDS-servers__check
-		height: 60px
+		min-height: 60px
 		position: relative
 		.ico-table
 			font-size: 12.5px
@@ -587,6 +586,46 @@ li
 								background-color: #323838
 								text-decoration: none
 								transition: 0.3s
+//  slider
+.ui-widget.ui-widget-content
+	width: 100%
+	border: none
+	background: #ddd
+	position: relative
+	.ui-state-default, .ui-widget-content .ui-state-default
+		width: 20px
+		height: 20px
+		background: #e87e02
+		border: 1px solid $main_color
+		border-radius: 50%
+		top: -4px
+		box-shadow: inset 0 0 0 5px #fcfff4
+		transition: background 0.5s
+		&.ui-state-hover
+			background: #e6e6e6
+			outline: 0
+		&.ui-state-active
+			background: #e6e6e6
+			outline: 0
+		&.ui-state-focus
+			background: #e6e6e6
+			outline: 0
+	.ui-slider-horizontal
+		height: 6px
+		border-radius: 5px
+		top: 1px
+	.ui-widget-header
+		background: #e87e02
+		border-top: 1px solid #e87e02
+		border-right: 9px solid #d57402
+.ui-corner-all,.ui-corner-left,.ui-corner-tl,.ui-corner-top
+	border-top-left-radius: 5px
+.ui-corner-all,.ui-corner-right,.ui-corner-top,.ui-corner-tr
+	border-top-right-radius: 5px
+.ui-corner-all,.ui-corner-bl,.ui-corner-bottom,.ui-corner-left
+	border-bottom-left-radius: 5px
+.ui-corner-all,.ui-corner-bottom,.ui-corner-br,.ui-corner-right
+	border-bottom-right-radius: 5px
 // Секция rent-VPS-VDS-servers-description
 .rent-VPS-VDS-servers-description
 	padding-top: 40px
@@ -851,14 +890,21 @@ li
 .rent-VPS-VDS-servers-its-configuration
 	h3
 		font: 17px RobotoSlabBold
-		padding: 0
+		padding: 0 15px
 		margin-bottom: 10px
 		margin-top: 0
 		background: none
 		text-transform: uppercase
 		color: $main_color
 	.rent-VPS-VDS-servers-its-configuration__sliders-wrap
+		form
+			input
+				border: none
+				font: 12.5px RobotoSlabRegular
 		.rent-VPS-VDS-servers-its-configuration__sliders-item
+			display: flex
+			align-items: center
+
 
 // Секция seo-txt
 .seo-txt

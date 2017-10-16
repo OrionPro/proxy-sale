@@ -21,6 +21,44 @@ function tabs(obj) {
 }
 
 $(document).ready( function() {
+	// slider
+	// slider
+	$("#slider-its-configuration").slider({
+		value: 5,
+		min: 2,
+		max: 8,
+		step: 1,
+		range: "min",
+		slide: function(event, ui) {
+			$("#amount").val(ui.value.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + " ядер по 2 ГГц");
+
+		}
+	});
+	$("#amount").val($("#slider-its-configuration").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + " ядер по 2 ГГц");
+
+	$("#slider-its-configuration2").slider({
+		value: 16,
+		min: 2,
+		max: 32,
+		step: 2,
+		range: "min",
+		slide: function(event, ui) {
+			$("#amount2").val(ui.value  + " Гб");
+		}
+	});
+	$("#amount2").val($("#slider-its-configuration2").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + " Гб");
+
+	$("#slider-its-configuration3").slider({
+		value: 150,
+		min: 50,
+		max: 500,
+		step: 50,
+		range: "min",
+		slide: function(event, ui) {
+			$("#amount3").val(ui.value  + " Гб");
+		}
+	});
+	$("#amount3").val($("#slider-its-configuration3").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + " Гб");
 	// вызов tabs
 	tabs({
 		btn:'.tabs-items-wrap .tabs-item',
