@@ -79,6 +79,12 @@
 		display: block
 	.FAQ .FAQ-tab-items button.active:after, .FAQ .FAQ-tab-items button:first-of-type.active:after
 		right: -32px
+	.rent-VPS-VDS-servers-description
+		.rent-VPS-VDS-servers-description__wrap
+			flex-direction: column
+			align-items: center
+		.rent-VPS-VDS-servers-description__item
+			margin-bottom: 20px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	
@@ -135,7 +141,10 @@
 				height: 100%
 				font-size: 12px
 				word-break: break-all
-
+		.FAQ-tabs-wrap
+			padding-left: 10px
+			padding-top: 15px
+			padding-right: 10px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 520px)
 	/**/
@@ -148,17 +157,39 @@
 
 @media only screen and (max-width : 480px)
 	/**/
-
+	.free-with-each-VDS-VPS
+		.free-with-each-VDS-VPS__OS
+			.paid-services-items
+				.paid-services__item
+					.paid-services-table
+						.divider
+							display: none
+						td
+							font-size: 11px
+							&.main-color
+								font-size: 11px
 	.header_title
 		h1
 			font-size: 26px
 	.modal_form_input_wrap
 		.modal_input_error
-			right: 0px
+			right: 0
 	.intermediate
 		.intermediate_title
 			h3
 				font-size: 20px
+	.rent-VPS-VDS-servers
+		.rent-VPS-VDS-servers__rates
+			.table-rates
+				width: 90%
+				tbody
+					tr
+						td
+							font-size: 12px
+							.big
+								font-size: 18px
+							a
+								width: 85%
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

@@ -30,7 +30,10 @@ $(document).ready( function() {
 		step: 1,
 		range: "min",
 		slide: function(event, ui) {
-			$("#amount").val(ui.value.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + " ядер по 2 ГГц");
+			if(ui.value ){
+
+			}
+			$("#amount").val(ui.value + " ядер по 2 ГГц");
 
 		}
 	});
