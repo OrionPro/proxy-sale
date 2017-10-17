@@ -20,6 +20,7 @@ function tabs(obj) {
 	[].forEach.call(buttons,item => item.addEventListener('click',func));
 }
 
+
 $(document).ready( function() {
 	// slider
 	// slider

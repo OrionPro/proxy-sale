@@ -459,23 +459,17 @@
 								</tr>
 								</tbody>
 							</table>
-							<table class="table-rates table-rates-hidden tablesaw tablesaw-swipe"
-								   data-tablesaw-mode="swipe">
+							<table class="table-rates table-rates-hidden tablesaw tablesaw-swipe" data-tablesaw-mode="swipe">
 								<thead>
 								<tr>
-									<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist"></th>
-									<th scope="col" data-tablesaw-sortable-col
-										data-tablesaw-sortable-default-col data-tablesaw-sortable-default-col
-										data-tablesaw-priority="3">VDS Старт
+									<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist" ></th>
+									<th scope="col">VDS Старт
 									</th>
-									<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col
-										data-tablesaw-priority="2" class="active">VDS Разгон
+									<th scope="col" class="active">VDS Разгон
 									</th>
-									<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col
-										data-tablesaw-priority=4">VDS Отрыв
+									<th scope="col">VDS Отрыв
 									</th>
-									<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col
-										data-tablesaw-priority="1">VDS Улёт
+									<th scope="col">VDS Улёт
 									</th>
 								</tr>
 								</thead>
@@ -1188,6 +1182,13 @@
 <script src="js/tablesaw.js"></script>
 <script src="js/tablesaw-init.js"></script>
 <script>
+
+	var TablesawConfig = {
+		swipe: {
+			horizontalThreshold: 50,
+			verticalThreshold: 20
+		}
+	};
 	var scr = {
 		"scripts": [{
 			"src": "js/libs.js",
