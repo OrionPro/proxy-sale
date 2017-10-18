@@ -22,7 +22,10 @@ function tabs(obj) {
 
 
 $(document).ready( function() {
-	// slider
+	// для сафари к примеру, чтобы кликабельный body стал, для закрытия popover
+	if ('ontouchstart' in document.documentElement) { // or whatever "is this a touch device?" test we want to use
+		$('body').css('cursor', 'pointer');
+	}
 	// slider
 	$("#slider-its-configuration").slider({
 		value: 5,
@@ -96,11 +99,15 @@ $(document).ready( function() {
 		return 'Не определен';
 	}
 
-	if (get_name_browser() == "Trident" || get_name_browser() == "Internet Explorer" || get_name_browser() == "Firefox") {
-		// $(".from_what_is_seo .from_what_is_seo_bot_decor svg").css("bottom", "-217px");
-		// $(".website_promotion .website_promotion_decor").css("bottom", "-177px");
-		// $(".cost_of_online_store .cost_of_online_store_links_item").css("margin-right", "72px");
-	}	
+	if (get_name_browser() == "Safari") {
+
+		if(window.matchMedia("(min-width: 768px)").matches) {
+			$(".FAQ .FAQ-tabs-wrap").css("height", "578px");
+		}
+		if(window.matchMedia("(max-width: 768px)").matches) {
+			$(".FAQ .FAQ-tabs-wrap").css("height", "inherit");
+		}
+	}
 
     // для инициализации tooltips
     // $( document ).tooltip({
@@ -152,7 +159,15 @@ $(document).ready( function() {
 });
 
 $(window).resize(function() {
+	if (get_name_browser() == "Safari") {
 
+		if(window.matchMedia("(min-width: 768px)").matches) {
+			$(".FAQ .FAQ-tabs-wrap").css("height", "578px");
+		}
+		if(window.matchMedia("(max-width: 768px)").matches) {
+			$(".FAQ .FAQ-tabs-wrap").css("height", "inherit");
+		}
+	}
 });
 
 $(window).scroll(function() {

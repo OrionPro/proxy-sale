@@ -471,8 +471,8 @@ li
 	.rent-VPS-VDS-servers__rates
 		padding: 30px 0 0 0
 		.table-rates
-			width: 1000px
-			margin-left: 70px
+			width: 1030px
+			margin-left: 40px
 			&.table-rates-hidden
 				display: none
 			thead
@@ -480,16 +480,13 @@ li
 					th
 						text-align: center
 						padding: 24px 0
-						&.tablesaw-swipe-cellpersist
-							&:nth-child(1)
-								width: 100px
 						&:first-of-type
 							width: 200px
 							background-image: none !important
 						&.empty
 							width: 30px
 							background: none
-						&:nth-of-type(odd)
+						&:nth-of-type(even)
 							font: 20px RobotoSlabBold
 							color: #fff
 							background-image: linear-gradient(to top, #1e2222 0, #313737 100%)
@@ -503,7 +500,7 @@ li
 							padding: 0
 							position: relative
 							background: 0 0
-							&:nth-of-type(odd)
+							&:nth-of-type(even)
 								&:after
 									content: ""
 									display: block
@@ -516,7 +513,7 @@ li
 									content: none
 					&:last-of-type
 						td
-							&:nth-of-type(odd)
+							&:nth-of-type(even)
 								border-bottom: 1px solid rgba(0, 0, 0, 0.12)
 								background: transparent
 								background-color: #f1f1f1
@@ -549,7 +546,7 @@ li
 							i
 								font-size: 22px
 								color: #fff
-						&:nth-of-type(odd)
+						&:nth-of-type(even)
 							width: 170px
 							background-color: #f1f1f1
 							border-left: 1px solid rgba(0, 0, 0, 0.12)
@@ -558,7 +555,10 @@ li
 							width: 30px
 							background: none
 						&:first-of-type
-							text-align: left
+							width: 260px
+							padding-right: 30px
+							padding-left: 30px
+							text-align: center
 							border: none
 							background-color: transparent
 							&.empty-big
@@ -783,7 +783,6 @@ li
 	.FAQ-tab-wrap-all
 		.flex
 			display: flex
-			flex-wrap: wrap
 	.FAQ-tab-items
 		button
 			width: 100%
@@ -910,6 +909,7 @@ li
 			height: 1px
 		.ico-table
 			margin-left: 0
+			font-size: 12.5px
 		form
 			input
 				border: none
@@ -918,7 +918,11 @@ li
 			display: flex
 			align-items: center
 			margin-bottom: 30px
-
+			i
+				margin-left: 10px
+				font-size: 12.5px
+				color: #c5c5c5
+				cursor: pointer
 
 // Секция seo-txt
 .seo-txt
