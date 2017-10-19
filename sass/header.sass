@@ -890,7 +890,6 @@ li
 			animation-delay: 0.3s
 			animation-fill-mode: backwards
 .rent-VPS-VDS-servers-its-configuration
-	padding-left: 30px
 	h3
 		font: 17px RobotoSlabBold
 		padding: 0
@@ -900,10 +899,11 @@ li
 		text-transform: uppercase
 		color: $main_color
 	.rent-VPS-VDS-servers-its-configuration__sliders-wrap
+		padding-left: 15px
+		padding-right: 15px
 		.rent-VPS-VDS-servers-its-configuration__sliders-item-divider-wrap
 			margin-top: 30px
-			padding-left: 50px
-			padding-right: 50px
+			margin-bottom: 30px
 		.rent-VPS-VDS-servers-its-configuration__sliders-item-divider
 			background: gainsboro
 			height: 1px
@@ -918,12 +918,23 @@ li
 			display: flex
 			align-items: center
 			margin-bottom: 30px
+			font: 12.5px RobotoSlabRegular
+			&.txt
+				align-items: flex-start
 			i
 				margin-left: 10px
 				font-size: 12.5px
 				color: #c5c5c5
 				cursor: pointer
-
+			span
+				font: 12.5px RobotoSlabBold
+			.txt-right
+				margin-top: 5px
+			.bottom-txt
+				padding-left: 28px
+				margin-top: 15px
+			button
+				margin: auto
 // Секция seo-txt
 .seo-txt
 	padding-top: 65px

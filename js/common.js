@@ -20,6 +20,23 @@ function tabs(obj) {
 	[].forEach.call(buttons,item => item.addEventListener('click',func));
 }
 
+// Определения браузера
+function get_name_browser() {
+	// получаем данные userAgent
+	var ua = navigator.userAgent;
+	// с помощью регулярок проверяем наличие текста,
+	// соответствующие тому или иному браузеру
+	if (ua.search(/Chrome/) > 0) return 'Google Chrome';
+	if (ua.search(/Firefox/) > 0) return 'Firefox';
+	if (ua.search(/Opera/) > 0) return 'Opera';
+	if (ua.search(/Safari/) > 0) return 'Safari';
+	if (ua.search(/MSIE/) > 0) return 'Internet Explorer';
+	if (ua.search(/Trident/) > 0) return 'Trident';
+	// условий может быть и больше.
+	// сейчас сделаны проверки только
+	// для популярных браузеров
+	return 'Не определен';
+}
 
 $(document).ready( function() {
 	// для сафари к примеру, чтобы кликабельный body стал, для закрытия popover
@@ -81,31 +98,14 @@ $(document).ready( function() {
 	});
 	// Активация popover
 	$('[data-toggle="popover"]').popover();
-    // Определения браузера
-	function get_name_browser() {
-		// получаем данные userAgent
-		var ua = navigator.userAgent;
-		// с помощью регулярок проверяем наличие текста,
-		// соответствующие тому или иному браузеру
-		if (ua.search(/Chrome/) > 0) return 'Google Chrome';
-		if (ua.search(/Firefox/) > 0) return 'Firefox';
-		if (ua.search(/Opera/) > 0) return 'Opera';
-		if (ua.search(/Safari/) > 0) return 'Safari';
-		if (ua.search(/MSIE/) > 0) return 'Internet Explorer';
-		if (ua.search(/Trident/) > 0) return 'Trident';
-		// условий может быть и больше.
-		// сейчас сделаны проверки только
-		// для популярных браузеров
-		return 'Не определен';
-	}
 
 	if (get_name_browser() == "Safari") {
 
 		if(window.matchMedia("(min-width: 768px)").matches) {
-			$(".FAQ .FAQ-tabs-wrap").css("height", "578px");
+			$(".FAQ .FAQ-tabs-wrap").css("min-height", "578px");
 		}
 		if(window.matchMedia("(max-width: 768px)").matches) {
-			$(".FAQ .FAQ-tabs-wrap").css("height", "inherit");
+			$(".FAQ .FAQ-tabs-wrap").css("min-height", "inherit");
 		}
 	}
 
