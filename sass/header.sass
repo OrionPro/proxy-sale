@@ -443,7 +443,7 @@ li
 			height: 50px
 			border: none
 			background-color: whitesmoke
-			border-radius: 10px 10px 0px 0px
+			border-radius: 10px 10px 0 0
 			font-family: RobotoSlabRegular
 			font-size: 14px
 			color: #24292a
@@ -467,7 +467,17 @@ li
 				background: linear-gradient(to top, transparent 0%, #fd8314 100%)
 				background-color: #ff8700
 				color: #fff
-
+		.configure-the-settings__title
+			width: 100%
+			height: 50px
+			line-height: 50px
+			text-align: center
+			border-radius: 10px 10px 0 0
+			background: linear-gradient(to top, transparent 0%, #fd8314 100%)
+			background-color: #ff8700
+			color: #fff
+			font-family: RobotoSlabRegular
+			font-size: 14px
 	.rent-VPS-VDS-servers__rates
 		padding: 30px 0 0 0
 		.table-rates
@@ -898,15 +908,15 @@ li
 		background: none
 		text-transform: uppercase
 		color: $main_color
-	.rent-VPS-VDS-servers-its-configuration__sliders-wrap
-		padding-left: 15px
-		padding-right: 15px
-		.rent-VPS-VDS-servers-its-configuration__sliders-item-divider-wrap
-			margin-top: 30px
-			margin-bottom: 30px
+	.rent-VPS-VDS-servers-its-configuration__sliders-item-divider-wrap
+		margin-top: 30px
+		margin-bottom: 30px
 		.rent-VPS-VDS-servers-its-configuration__sliders-item-divider
 			background: gainsboro
 			height: 1px
+	.rent-VPS-VDS-servers-its-configuration__sliders-wrap
+		padding-left: 15px
+		padding-right: 15px
 		.ico-table
 			margin-left: 0
 			font-size: 12.5px
@@ -919,8 +929,38 @@ li
 			align-items: center
 			margin-bottom: 30px
 			font: 12.5px RobotoSlabRegular
+			&>span
+				font: 12.5px RobotoSlabBold
+				color: $main_color
+			.under-ico-table
+				padding-left: 28px
+				margin-top: -5px
+			&.shtuka
+				padding: 0
+			.dropdown
+				width: 222px
+			.form-control
+				width: 222px
+				height: 25px
+				font: 12.5px RobotoSlabRegular
+				padding: 3px 12px
+				&:after
+					content: ""
+					top: 10px
 			&.txt
 				align-items: flex-start
+			.flex
+				display: flex
+				flex-direction: column
+				.main_color
+					color: $main_color
+					text-transform: uppercase
+					b
+						font-size: 20px
+					i
+						font-size: 20px
+						color: $main_color
+						margin-right: 5px
 			i
 				margin-left: 10px
 				font-size: 12.5px
@@ -934,7 +974,63 @@ li
 				padding-left: 28px
 				margin-top: 15px
 			button
-				margin: auto
+				width: 230px
+				height: 34px
+				align-self: center
+				border: none
+				text-transform: uppercase
+				margin-top: -20px
+				background-image: linear-gradient(to top,transparent 0,#e4821e 100%)
+				background-color: #dc330c
+				border-radius: 3px
+				font: 12.5px RobotoSlabBold
+				color: #fff
+				transition: .3s
+				&:hover
+					background-image: linear-gradient(to top, transparent 0, #1e2223 100%)
+					background-color: #323838
+					text-decoration: none
+					transition: 0.3s
+				&:active
+					background-image: linear-gradient(to top, transparent 0, #1e2223 100%)
+					background-color: #323838
+					text-decoration: none
+					transition: 0.3s
+				&:focus
+					background-image: linear-gradient(to top, transparent 0, #1e2223 100%)
+					background-color: #323838
+					text-decoration: none
+					transition: 0.3s
+.configure-the-settings__wrap
+	padding-left: 15px
+	padding-right: 15px
+	h3
+		margin-bottom: 0
+		font: 20px RobotoSlabBold
+		span
+			color: #24292a
+			font: 20px RobotoSlabRegular
+	.configure-the-settings__title-h3
+		display: flex
+		align-items: center
+		p
+			font: 12.5px RobotoSlabRegular
+			b
+				font-family: RobotoSlabBold
+		span
+			&.main_color
+				color: $main_color
+				margin-left: auto
+				font: 12.5px RobotoSlabRegular
+				b
+					font: 20px RobotoSlabBold
+				i
+					font-size: 20px
+				&.not_big
+					b
+						font: 18px RobotoSlabRegular
+					i
+						font-size: 18px
 // Секция seo-txt
 .seo-txt
 	padding-top: 65px

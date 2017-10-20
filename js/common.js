@@ -39,6 +39,21 @@ function get_name_browser() {
 }
 
 $(document).ready( function() {
+
+	$('.dropdown-menu a').click(function(e){
+		e.preventDefault();
+		var self = $(this),
+			value = self.attr('rel') || false,
+			dropdown = self.closest('.dropdown').find('.dropdown-value');
+		if (value === false) return false;
+		if (self.hasClass('packet-ico')) dropdown.addClass('packet-ico').attr('style', self.attr('style'));
+		dropdown.text(self.text()).data('value', value).triggerHandler('change');
+	});
+
+	$(".dropdown-menu li a").click(function(){
+		$(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+		$(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+	});
 	// для сафари к примеру, чтобы кликабельный body стал, для закрытия popover
 	if ('ontouchstart' in document.documentElement) { // or whatever "is this a touch device?" test we want to use
 		$('body').css('cursor', 'pointer');
