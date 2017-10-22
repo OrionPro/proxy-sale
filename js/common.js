@@ -60,44 +60,80 @@ $(document).ready( function() {
 	}
 	// slider
 	$("#slider-its-configuration").slider({
-		value: 5,
+		value: 3,
 		min: 2,
 		max: 8,
 		step: 1,
 		range: "min",
 		slide: function(event, ui) {
-			if(ui.value ){
-
+			switch(ui.value){
+				case 2:
+				$("#amount").val(ui.value + " ядра по 2 ГГц");
+				break;
+				case 3:
+				$("#amount").val(ui.value + " ядра по 2 ГГц");
+				break;
+				case 4:
+				$("#amount").val(ui.value + " ядра по 2 ГГц");
+				break;
+				case 5:
+					$("#amount").val(ui.value + " ядер по 2 ГГц");
+					break;
+				case 6:
+					$("#amount").val(ui.value + " ядер по 2 ГГц");
+					break;
+				case 7:
+					$("#amount").val(ui.value + " ядер по 2 ГГц");
+					break;
+				case 8:
+					$("#amount").val(ui.value + " ядер по 2 ГГц");
+					break;
 			}
-			$("#amount").val(ui.value + " ядер по 2 ГГц");
 
+			$(this).find('.my-handle').text(ui.value);
 		}
 	});
-	$("#amount").val($("#slider-its-configuration").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + " ядер по 2 ГГц");
+
+
+	$("#amount").val($("#slider-its-configuration").slider("value") + " ядра по 2 ГГц");
+	setTimeout(function () {
+		$("#slider-its-configuration .my-handle").text($("#slider-its-configuration").slider("value"));
+	}, 300);
 
 	$("#slider-its-configuration2").slider({
-		value: 16,
+		value: 4,
 		min: 2,
 		max: 32,
 		step: 2,
 		range: "min",
 		slide: function(event, ui) {
 			$("#amount2").val(ui.value  + " Гб");
+			$(this).find('.my-handle').text(ui.value);
 		}
 	});
 	$("#amount2").val($("#slider-its-configuration2").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + " Гб");
-
+	setTimeout(function () {
+		$("#slider-its-configuration2 .my-handle").text($("#slider-its-configuration2").slider("value"));
+	}, 300);
 	$("#slider-its-configuration3").slider({
-		value: 150,
+		value: 100,
 		min: 50,
 		max: 500,
 		step: 50,
 		range: "min",
 		slide: function(event, ui) {
 			$("#amount3").val(ui.value  + " Гб");
+			$(this).find('.my-handle').text(ui.value);
+
+		},
+		create: function( event, ui ) {
+			$('.slider span').append('<div class="my-handle"></div>');
 		}
 	});
 	$("#amount3").val($("#slider-its-configuration3").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + " Гб");
+	setTimeout(function () {
+		$("#slider-its-configuration3 .my-handle").text($("#slider-its-configuration3").slider("value"));
+	}, 300);
 	// вызов tabs
 	tabs({
 		btn:'.tabs-items-wrap .tabs-item',
@@ -127,9 +163,9 @@ $(document).ready( function() {
     // для инициализации tooltips
     // $( document ).tooltip({
     //   track: true
-    // }); 
+    // });
 
-    // скролл по ссылке с атрибутом href 
+    // скролл по ссылке с атрибутом href
     // $(".header_nav a[href*='#']").on("click", function(e) {
     //     e.preventDefault();
     //     var anchor = $(this);
@@ -168,8 +204,8 @@ $(document).ready( function() {
     //     // With optional speed parameter
     //     // Parameters has to be in square bracket '[]'
     //     owl.trigger('prev.owl.carousel', [700]);
-    // });  
-    
+    // });
+
 
 });
 
@@ -186,6 +222,6 @@ $(window).resize(function() {
 });
 
 $(window).scroll(function() {
-    
+
 });
 
