@@ -805,7 +805,6 @@ li
 		justify-content: center
 		color: #000!important
 		font: 12.5px RobotoSlabRegular
-		position: relative
 		transition: 0.5s
 		&:after
 			content: ""
@@ -962,6 +961,9 @@ li
 		.ico-table
 			margin-left: 0
 			font-size: 12.5px
+			&.pay-for-work
+				padding-left: 0
+				background: none
 		form
 			input
 				border: none
@@ -971,10 +973,32 @@ li
 			align-items: center
 			margin-bottom: 30px
 			font: 12.5px RobotoSlabRegular
+			&.big-btn
+				margin-bottom: 0
+				button
+					width: 370px
+					margin-top: 0
+			&.packet-dropdown
+				.dropdown
+					width: inherit
+					margin-right: 20px
+					margin-left: 0
+					float: none
+				.dropdown-menu
+					min-width: 100%
+				p
+					font: 20px RobotoSlabBold
+					span
+						font-size: 20px
+						color: $main_color
+			.col
+				padding-left: 15px
+				margin-right: 20px
 			.amount
 				display: inline-flex
 				align-items: center
 				justify-content: center
+				margin-right: 20px
 				input
 					width: 40px
 					height: 25px
@@ -982,6 +1006,16 @@ li
 					border-radius: 3px
 					margin-right: 7px
 					text-align: center
+					&:hover
+						outline: 0
+					&:active
+						outline: 0
+						border-color: #f80
+						box-shadow: 0 0 8px rgba(255,136,0,0.6)
+					&:focus
+						outline: 0
+						border-color: #f80
+						box-shadow: 0 0 8px rgba(255,136,0,0.6)
 				span
 					position: relative
 					top: -2px

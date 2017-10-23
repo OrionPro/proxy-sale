@@ -72,12 +72,26 @@
 			.ico-table
 				margin-bottom: 20px
 			.rent-VPS-VDS-servers-its-configuration__sliders-item
+				.amount
+					margin-right: 0
+					margin-bottom: 10px
+					input
+						margin-top: 0
+			.rent-VPS-VDS-servers-its-configuration__sliders-item
 				flex-direction: column
 				input
 					margin-top: 20px
 					text-align: center
 				button
 					margin-top: 10px
+				&.packet-dropdown
+					.dropdown
+						margin-right: 0
+				&.big-btn
+					button
+						width: 100%
+						padding-left: 10px
+						padding-right: 10px
 			.dropdown
 				margin: 0 auto 20px
 			.rent-VPS-VDS-servers-its-configuration__sliders-item-inner
@@ -85,9 +99,13 @@
 					display: flex
 					flex-direction: column
 					align-items: center
+	.ui-widget
+		&.ui-widget-content
+			margin-bottom: 10px
 	.shtuka
 		.ico-table
 			margin-right: 0
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -189,6 +207,20 @@
 			padding-left: 10px
 			padding-top: 15px
 			padding-right: 10px
+	.configure-the-settings__wrap
+		.configure-the-settings__title-h3
+			flex-direction: column
+			h3
+				font-size: 16px
+				span
+					font-size: 16px
+			p
+				text-align: center
+			span
+				margin-bottom: 10px
+				&.main_color
+					margin-left: 0
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 520px)
 	/**/
@@ -259,6 +291,23 @@
 		height: 104%
 	.FAQ .FAQ-tab-items button.active:after
 		width: 32px
+	.rent-VPS-VDS-servers-its-configuration
+		.rent-VPS-VDS-servers-its-configuration__sliders-wrap
+			.ico-table
+				margin-bottom: 10px
+			.rent-VPS-VDS-servers-its-configuration__sliders-item
+				flex-direction: column
+				input
+					margin-top: 10px
+					text-align: center
+				button
+					margin-top: 10px
+				&.packet-dropdown
+					.dropdown
+						margin-bottom: 10px
+				&.big-btn
+					button
+						font-size: 10px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
