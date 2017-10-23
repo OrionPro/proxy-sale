@@ -209,7 +209,8 @@
 											<h3>VDS Форсаж
 												<span>KVM HDD+SSD</span>
 											</h3>
-											<span class="main_color"><b>17254 </b><i class="fa fa-rub"></i> в месяц </span>
+											<span class="main_color"><b>17254 </b><i
+													class="fa fa-rub"></i> в месяц </span>
 										</div>
 									</div>
 
@@ -254,7 +255,8 @@
 										<div class="col-lg-3 col-sm-3 col-xs-12">
 											<div class="dropdown">
 												<div class="form-control" data-toggle="dropdown">
-													<div class="dropdown-value" data-name="rent-VPS-VDS" data-value="0">Цель использования</div>
+													<div class="dropdown-value" data-name="rent-VPS-VDS"
+														 data-value="0">Цель использования</div>
 												</div>
 												<ul class="dropdown-menu">
 													<li>
@@ -276,7 +278,8 @@
 										<div class="col-lg-3 col-sm-3 col-xs-12">
 											<div class="dropdown">
 												<div class="form-control" data-toggle="dropdown">
-													<div class="dropdown-value" data-name="rent-VPS-VDS" data-value="0">Выберите ПО</div>
+													<div class="dropdown-value" data-name="rent-VPS-VDS"
+														 data-value="0">Выберите ПО</div>
 												</div>
 												<ul class="dropdown-menu">
 													<li>
@@ -304,21 +307,18 @@
 											<p class="under-ico-table">можете оставить пустым</p>
 										</div>
 										<div class="col-lg-3 col-sm-3 col-xs-12">
-											<div class="dropdown">
-												<div class="form-control" data-toggle="dropdown">
-													<div class="dropdown-value" data-name="rent-VPS-VDS" data-value="0">Выберите ПО</div>
-												</div>
-												<ul class="dropdown-menu">
-													<li>
-														<a href="#" rel="0">ISPmanager Lite</a>
-													</li>
-													<li>
-														<a href="#" rel="1">ISPmanager</a>
-													</li>
-												</ul>
+											<input type="text" placeholder="servername.ru">
+											<i data-container="body" data-trigger="hover"
+											   data-toggle="popover"
+											   data-placement="top" data-content="Укажите имя сервера" data-original-title="Имя сервера" title="" class="fa fa-question-circle"></i>
+										</div>
+									</div>
+									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider-wrap clearfix">
+										<div class="col-lg-12">
+											<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider">
+
 											</div>
 										</div>
-										<span>БЕСПЛАТНО</span>
 									</div>
 									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item">
 										<div class="col-lg-3">
@@ -327,53 +327,66 @@
 										<div class="col-lg-5 col-sm-8 col-xs-12">
 											<div id="slider-its-configuration" class="slider">
 												<div class="slider__bottom-left-txt">
-													0
+													2
 												</div>
 												<div class="slider__bottom-right-txt">
 													8
 												</div>
 											</div>
 										</div>
-										<input name="amount_slider" type="text" id="amount" readonly>
+										<div class="amount">
+											<input name="amo" type="text" id="amount-input">
+											<span id="amount-span">ядра</span>
+										</div>
+										<span class="plus-price">+ 640 ₽</span>
+									</div>
+									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider-wrap clearfix">
+										<div class="col-lg-12">
+											<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider">
+
+											</div>
+										</div>
 									</div>
 									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item">
 										<div class="col-lg-3">
-											<div class="ico-table">Дисковая система:
-												<i data-container="body" data-trigger="hover" data-toggle="popover"
-												   data-placement="top" data-content="Выберите объем диска «с запасом»
-— на Форсаже дисковое
-пространство можно изменить
-только обращением в поддержку." data-original-title="Дисковая система" title="" class="fa fa-question-circle"></i>
+											<div class="ico-table">Память:
 											</div>
 										</div>
-										<div class="col-lg-5">
-											<div class="ckbx-style-13">
-												<input type="checkbox" id="ckbx-style-13-3" value="0"
-													   name="ckbx-style-13">
-												<span class="one">HDD+SSD</span>
-												<label for="ckbx-style-13-3"></label>
-												<span class="two">SSD</span>
+										<div class="col-lg-5 col-sm-8 col-xs-12">
+											<div id="slider-its-configuration2" class="slider">
+												<div class="slider__bottom-left-txt">
+													2
+												</div>
+												<div class="slider__bottom-right-txt">
+													32
+												</div>
+											</div>
+										</div>
+										<div class="amount">
+											<input name="amo" type="text" id="amount-input2">
+											<span id="amount-span2">Гб</span>
+										</div>
+										<span class="plus-price">+ 5100 ₽</span>
+									</div>
+									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider-wrap clearfix">
+										<div class="col-lg-12">
+											<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider">
+
 											</div>
 										</div>
 									</div>
 									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item">
 										<div class="col-lg-3">
 											<div class="ico-table">объём диска:
-												<i data-container="body" data-trigger="hover" data-toggle="popover"
-												   data-placement="top"
-												   data-content="Выберите объем диска «с запасом»"
-												   data-original-title="объём диска" title=""
-												   class="fa fa-question-circle">
-												</i>
 											</div>
 										</div>
 										<div class="col-lg-5 col-sm-8 col-xs-12">
 											<div id="slider-its-configuration3" class="slider">
 												<div class="slider__bottom-left-txt">
-													0
+													50
 												</div>
 												<div class="slider__bottom-right-txt">
-													8
+													500
 												</div>
 											</div>
 										</div>
@@ -386,41 +399,34 @@
 											</div>
 										</div>
 									</div>
-									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item txt">
-										<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-inner col-lg-6">
-											<div class="row">
-												<div class="col-lg-6">
-													<div class="ico-table">Защита от DDOS-атак:
-														<i data-container="body" data-trigger="hover"
-														   data-toggle="popover"
-														   data-placement="top" data-content="Выберите объем диска «с запасом»
-— на Форсаже дисковое
-пространство можно изменить
-только обращением в поддержку." data-original-title="Дисковая система" title="" class="fa fa-question-circle"></i>
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="ckbx-style-13">
-														<input type="checkbox" id="ckbx-style-13-4" value="0"
-															   name="ckbx-style-13">
-														<span class="one">ВКЛЮЧЕНА</span>
-														<label for="ckbx-style-13-4"></label>
-														<span class="two">ВЫКЛЮЧЕНА</span>
-													</div>
-												</div>
-												<div class="col-lg-12">
-													<p class="bottom-txt">Оградим ваш сервер от атак
-														конкурентов и
-														хулиганов. Вы
-														платите только за
-														полезную ширину канала, который используют ваши посетители.
-													</p></div>
+									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider-wrap clearfix">
+										<div class="col-lg-12">
+											<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider">
+
 											</div>
 										</div>
-										<div class="col-lg-2 col-lg-offset-1 txt-right">
-											<span>Канал 1 Мбит/с</span> <br/>
-											500 руб. за каждый
-											последующий 1 Мбит/с
+									</div>
+									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider-wrap clearfix">
+										<div class="col-lg-12">
+											<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider">
+
+											</div>
+										</div>
+									</div>
+									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item">
+										<div class="col-lg-3">
+											<div class="ico-table">ЗАЩИТА ОТ DDOS-АТАК:
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="ckbx-style-13">
+												<input type="checkbox" id="ckbx-style-13-4" value="0"
+													   name="ckbx-style-13">
+												<span class="one">ВКЛЮЧЕНА
+</span>
+												<label for="ckbx-style-13-4"></label>
+												<span class="two">ВЫКЛЮЧЕНА</span>
+											</div>
 										</div>
 									</div>
 									<div class="rent-VPS-VDS-servers-its-configuration__sliders-item-divider-wrap clearfix">

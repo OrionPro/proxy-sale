@@ -69,33 +69,49 @@ $(document).ready( function() {
 			switch(ui.value){
 				case 2:
 				$("#amount").val(ui.value + " ядра по 2 ГГц");
+				$("#amount-span").text("ядра");
 				break;
 				case 3:
 				$("#amount").val(ui.value + " ядра по 2 ГГц");
+				$("#amount-span").text("ядра");
 				break;
 				case 4:
 				$("#amount").val(ui.value + " ядра по 2 ГГц");
+				$("#amount-span").text("ядра");
 				break;
 				case 5:
 					$("#amount").val(ui.value + " ядер по 2 ГГц");
+					$("#amount-span").text("ядeр");
 					break;
 				case 6:
 					$("#amount").val(ui.value + " ядер по 2 ГГц");
+					$("#amount-span").text("ядeр");
 					break;
 				case 7:
 					$("#amount").val(ui.value + " ядер по 2 ГГц");
+					$("#amount-span").text("ядeр");
 					break;
 				case 8:
 					$("#amount").val(ui.value + " ядер по 2 ГГц");
+					$("#amount-span").text("ядeр");
 					break;
 			}
 
+			$(this).find('.my-handle').text(ui.value);
+			$('#amount-input').val(ui.value);
+		},
+		change: function( event, ui ) {
 			$(this).find('.my-handle').text(ui.value);
 		}
 	});
 
 
 	$("#amount").val($("#slider-its-configuration").slider("value") + " ядра по 2 ГГц");
+	$("#amount-input").val($("#slider-its-configuration").slider("value"));
+	$("#amount-input").keyup(function () {
+		$("#slider-its-configuration").slider("value", $(this).val());
+		$('#amount-input').val($(this).val());
+	});
 	setTimeout(function () {
 		$("#slider-its-configuration .my-handle").text($("#slider-its-configuration").slider("value"));
 	}, 300);
@@ -109,12 +125,22 @@ $(document).ready( function() {
 		slide: function(event, ui) {
 			$("#amount2").val(ui.value  + " Гб");
 			$(this).find('.my-handle').text(ui.value);
+		},
+		change: function( event, ui ) {
+			$(this).find('.my-handle').text(ui.value);
 		}
 	});
+
 	$("#amount2").val($("#slider-its-configuration2").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + " Гб");
 	setTimeout(function () {
 		$("#slider-its-configuration2 .my-handle").text($("#slider-its-configuration2").slider("value"));
 	}, 300);
+	$("#amount-input2").val($("#slider-its-configuration2").slider("value"));
+	$("#amount-input2").keyup(function () {
+		$("#slider-its-configuration2").slider("value", $(this).val());
+		$('#amount-input2').val($(this).val());
+	});
+
 	$("#slider-its-configuration3").slider({
 		value: 100,
 		min: 50,
@@ -130,6 +156,8 @@ $(document).ready( function() {
 			$('.slider span').append('<div class="my-handle"></div>');
 		}
 	});
+
+
 	$("#amount3").val($("#slider-its-configuration3").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + " Гб");
 	setTimeout(function () {
 		$("#slider-its-configuration3 .my-handle").text($("#slider-its-configuration3").slider("value"));
@@ -156,7 +184,7 @@ $(document).ready( function() {
 			$(".FAQ .FAQ-tabs-wrap").css("min-height", "578px");
 		}
 		if(window.matchMedia("(max-width: 768px)").matches) {
-			$(".FAQ .FAQ-tabs-wrap").css("min-height", "inherit");
+			$(".FAQ .FAQ-tabs-wrap").css("min-height", "100%");
 		}
 	}
 
