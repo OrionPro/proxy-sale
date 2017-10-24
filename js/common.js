@@ -172,6 +172,9 @@ $(document).ready(function () {
 		},
 		change: function (event, ui) {
 			$(this).find('.my-handle').text(ui.value);
+		},
+		create: function (event, ui) {
+			$('.slider span').append('<div class="my-handle"></div>');
 		}
 	});
 
@@ -203,10 +206,8 @@ $(document).ready(function () {
 				$(this).find('.my-handle').text(ui.value);
 			},
 			create: function (event, ui) {
-				console.log($(".slider-its-configurationIPv").length);
-
 				if(configurationIPvCounter === $(".slider-its-configurationIPv").length - 1) {
-					$('.slider span').append('<div class="my-handle"></div>');
+					$('.slider-its-configurationIPv span').append('<div class="my-handle"></div>');
 				}
 				configurationIPvCounter++;
 			}
