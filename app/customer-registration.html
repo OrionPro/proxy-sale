@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Заголовок</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/fonts.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/header.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="customer-registration">
+<section class="main-content">
+	<div class="container">
+		<div class="row">
+			<div class="main-content-wrap">
+
+				<div class="main-content-form-wrap">
+					<form class="form-customer-registration">
+						<h3>РЕГИСТРАЦИЯ КЛИЕНТА</h3>
+						<p>Зарегистрируйтесь — это займёт не больше 30 секунд!</p>
+						<div class="main-content-form-item">
+							<div class="form-before-input">
+								<i class="fa fa-envelope"></i>
+							</div>
+							<input name="email" type="text" placeholder="E-mail">
+						</div>
+						<p>Отправим письмо для подтверждения</p>
+						<div class="main-content-form-item">
+							<div class="form-before-input">
+								<i class="fa fa-lock"></i>
+							</div>
+							<input name="" type="password" placeholder="Пароль">
+							<a class="pid-link" href="#"><i class="fa fa-eye"></i></a>
+						</div>
+						<div class="main-content-form-item">
+							<div class="form-before-input">
+								<i class="fa fa-users"></i>
+							</div>
+							<input name="name" type="text" placeholder="Имя Фамилия">
+						</div>
+						<input type="submit" value="Зарегистироваться">
+						<p>Регистрация необходима для заказа и управления услугами.
+							Электронная почта используется только для уведомлений
+							о работе сервиса и информации о заказанных услугах.
+						</p>
+						<a id="open-login-to-your-account" class="main-content-form-bottom-link" href="#">У меня уже есть учетная запись</a>
+					</form>
+					<form class="login-to-your-account">
+						<h3>ВХОД В ЛИЧНЫЙ КАБИНЕТ</h3>
+						<p>Используйте логин и пароль</p>
+						<div class="main-content-form-item">
+							<div class="form-before-input">
+								<i class="fa fa-envelope"></i>
+							</div>
+							<input name="email" type="text" placeholder="E-mail">
+						</div>
+						<div class="main-content-form-item">
+							<div class="form-before-input">
+								<i class="fa fa-lock"></i>
+							</div>
+							<input name="" type="password" placeholder="Пароль">
+							<a class="pid-link" href="#"><i class="fa fa-eye"></i></a>
+						</div>
+						<input type="submit" value="Войти в личный кабинет">
+						<a class="main-content-form-bottom-link" href="#">Я забыл свой пароль</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="hidden"></div>
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>`
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<!-- Load Scripts Start -->
+<script>
+	var scr = {
+		"scripts": [{
+			"src": "js/libs.js",
+			"async": false
+		}, {
+			"src": "js/bootstrap.min.js",
+			"async": false
+		}, {
+			"src": "js/jquery.ui.touch-punch.min.js",
+			"async": false
+		}, {
+			"src": "js/main.js",
+			"async": false
+		}]
+	};
+	!function (t, n, r) {
+		"use strict";
+		var c = function (t) {
+			if ("[object Array]" !== Object.prototype.toString.call(t)) return !1;
+			for (var r = 0; r < t.length; r++) {
+				var c = n.createElement("script"),
+					e = t[r];
+				c.src = e.src, c.async = e.async, n.body.appendChild(c)
+			}
+			return !0
+		};
+		t.addEventListener ? t.addEventListener("load", function () {
+			c(r.scripts);
+		}, !1) : t.attachEvent ? t.attachEvent("onload", function () {
+			c(r.scripts)
+		}) : t.onload = function () {
+			c(r.scripts)
+		}
+	}(window, document, scr);
+</script>
+<!-- Load Scripts End -->
+</body>
+
+</html>

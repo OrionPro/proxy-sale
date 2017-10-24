@@ -38,7 +38,24 @@ function get_name_browser() {
 }
 
 $(document).ready(function () {
+	// Показываем пароль
+	function ShowHidePassword(el) {
+		var element = el;
+		element.replaceWith(element.clone().attr('type',(element.attr('type') == 'password') ? 'text' : 'password'))
+	}
+	$('.pid-link').on('click', function (e) {
+		e.preventDefault();
+		 var elem = $(this).siblings('input');
+		ShowHidePassword(elem);
+	});
 
+	// показывает форму login-to-your-account
+	$('#open-login-to-your-account').on('click', function (e) {
+		e.preventDefault();
+		$('.form-customer-registration').hide();
+		$('.login-to-your-account').addClass('animated flipInX').show();
+	});
+	// записывает из выпадашек значение
 	$('.dropdown-menu a').click(function (e) {
 		e.preventDefault();
 		var self = $(this),
