@@ -25,6 +25,9 @@
     "imagemin": "^5.2.2",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.0",
-    "imagemin-svgo": "^5.2.0"
+    "imagemin-svgo": "^5.2.0",
+    "lodash": "^4.17.11",
+    "minimatch": "^3.0.4",
+    "static-eval": "^2.0.0"
   }
 }
